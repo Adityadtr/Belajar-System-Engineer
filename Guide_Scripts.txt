@@ -1,0 +1,17 @@
+Script: clean_logs.sh
+Fungsi: 
+Script ini digunakan untuk menghapus file log berusia lebih dari 3 hari pada direktori:
+- /var/log/impalad/audit
+- /var/log/impalad/lineage
+
+Letakkan script di folder: /opt/scripts (atau sesuai kebutuhan masing masing server)
+dan dapat diberi izin untuk eksekusi dengan: chmod +x
+Keterangan:
+
+1. file log pada impalad/audit dan impalad/lineage dipakai sesuai kegiatan PM kemarin yang dilakukan dimana file log tersebut mengkonsumsi memory dengan mencapai 82%.
+path file log dapat disesuaikan dengan kebutuhan masing masing node
+2. Untuk menjalankan script secara otomatis, tambahkan cron job, sesuai dengan kebutuhan tim BSI dan masukkan path file script nya
+
+
+
+
